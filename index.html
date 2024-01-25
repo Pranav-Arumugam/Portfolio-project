@@ -7,7 +7,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/style.css">
+        <link rel="stylesheet" href="/public/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,23 +16,14 @@
         <section id="hero">
             <header>
                 <div class="home">home</div>
-                <nav>
-                    
-
-                    <ul class="sidebar">
-                        <li><a href="#about-me">about</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="public/pdfs/MUKHIL.BASKARAN.Resume.3.pdf" target="_blank">resume</a></li>
-                        <li><a href="#contact-me">contact</a></li>
-                    </ul>
-                    
+                <nav> 
                     <ul class="navlinks">
                         <li><a href="#about-me">about</a></li>
                         <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="public/pdfs/MUKHIL.BASKARAN.Resume.3.pdf" target="_blank">resume</a></li>
+                        <li><a href="public/pdfs/Pranav Resume.pdf" target="_blank">resume</a></li>
                         <li><a href="#contact-me">contact</a></li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                     </ul>
+                    <div class="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
                 </nav>
 
                 
@@ -69,7 +60,7 @@
                 <p class="info-2">I worked in the field of data science for renowned research institutes like the University of Queensland and private companies like Terres Inovia. I also worked as a senior software engineer for the dataviz team at Datadog.</p><br>
                 <div class="btns">
                     <button onclick="window.location.href='#portfolio';" class="btn pofo">portfolio</button>
-                    <button target="_blank" onclick="window.location.href='public/pdfs/MUKHIL.BASKARAN.Resume.3.pdf';" class="btn pofo">resume</button>
+                    <button target="_blank" onclick="window.location.href='public/pdfs/Pranav Resume.pdf';" class="btn pofo">resume</button>
                     <button   onclick="window.location.href='#contact-me';" class="btn pofo">contact</button>
                 </div>
                 
@@ -197,17 +188,7 @@
                 backgroundColor: 0x11313
                 })
         </script>
-        <script>
-             $(window).ready(function(){
-                $(window).on('scroll',function(){
-                    if($(window).scrollTop()){
-                        $("header").addClass('sbg');
-                    }else {
-                        $("header").removeClass("sbg");
-                    }
-                })
-            })
-        </script>
+        <script src="public/index.js"></script>
     </body>
 </html>
 
