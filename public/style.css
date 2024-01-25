@@ -54,8 +54,8 @@ header{
     width: 100%;
 }
 
-.navlinks li a svg{
-    color: aliceblue;
+.navlinks .menu-button{
+    font-size: 30px;
 }
 
 .navlinks li a:hover{
@@ -75,6 +75,23 @@ header{
 
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: aliceblue;
+
+}
+/*
 .sidebar{
     position: fixed;
     top:0;
@@ -120,6 +137,9 @@ header{
     border-color: aliceblue;
     transition: 0.3s ease;
 }
+*/
+
+
 
 
 /*------------------------------------------------------------------- hero section -----------------------------------------------------------------------------------------*/
@@ -177,7 +197,7 @@ header{
 }
 
 .divide-line{
-    color: aliceblue;
+    color:aliceblue;
     margin: 20px 0;
     text-align: center;
     width: 60%;
@@ -542,6 +562,44 @@ div.items .item:hover img{
 
 @media(max-width:600px) {
 
+    .hamburger{
+        display:block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navlinks{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(red, rgb(249, 255, 249), blue, alpha);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .navlinks li{
+        margin: 16px 0px ;
+    }
+
+    .navlinks.active{
+        left: 0;
+    }
+
     .section-pad{
         padding: 100px 0px;
     }
@@ -594,7 +652,7 @@ div.items .item:hover img{
     }
 
     .hero-intro{
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .hero-name{
@@ -606,15 +664,23 @@ div.items .item:hover img{
     }
 
     #contact-me{
-        height: 100%;
+        height: 60vh;
     }
+
+    #contact-me .contact-head h1{
+        position: relative;
+        font-size: 32px;
+        color: aliceblue;
+        margin: 10px 0px 0px;
+        text-transform: capitalize;
+}
 
     #contact-me .contact-con{
         padding: 0px 20px;
     }
 
     #contact-me .contact-email{
-        margin: 20px 0px;
+        margin: 50px 0px;
     }
 
     #contact-me .contact-con p{
@@ -622,6 +688,10 @@ div.items .item:hover img{
     }
 
     #contact-me .btn{
-        padding: 5px 10px;
+        padding: 10px 20px;
+    }
+
+    #contact-me .contact-links{
+        margin: 0;
     }
 }
